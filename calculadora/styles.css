@@ -1,0 +1,133 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #000000;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%230069df' fill-opacity='0.98' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+/* ... Tu código CSS existente ... */
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.nav-btn {
+    background-color: #444;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+.nav-btn:hover {
+    background-color: #333;
+}
+
+.menu-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    text-decoration: solid;
+}
+
+/* Cambio de color al pasar el mouse */
+.menu-button:hover {
+    background-color: #2980b9;
+}
+
+
+.calculator {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    max-width: 100%;
+}
+
+#display {
+    background-color: #282c34;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: right;
+    width: 100%;
+    outline: none;
+    padding: 10px 0px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 4px;
+    color: #333;
+    cursor: pointer;
+    font-size: 22px;
+    padding: 15px;
+    transition: background-color 0.3s;
+
+}
+
+.btn.operator {
+    background-color: #ff9500;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: #e0e0e0;
+}
+
+/* Botones especiales */
+#equals {
+    background-color: #ff9500;
+    color: #fff;
+}
+
+#lastdigit {
+    /*grid-column: span 2;*/
+    background-color: #ff3b30;
+    color: #fff;
+}
+
+#clear {
+    /*grid-column: span 2;*/
+    background-color: #ff3b30;
+    color: #fff;  
+}
+
+#percent {
+    background-color: #666;
+    color: #fff;
+}
+
+.parentesis1, .parentesis2 {
+    background-color: #666;
+    color: #fff;
+}
+
+#sqrt {
+    background-color: #666;
+    color: #fff;
+}

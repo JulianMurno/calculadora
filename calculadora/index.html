@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Racine_carr%C3%A9e_bleue.svg/220px-Racine_carr%C3%A9e_bleue.svg.png">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    
+    <div class="calculator">
+        
+        <input type="text" id="display" readonly>
+        <div class="buttons">
+            <button class="btn" onclick="appendToDisplay('7')">7</button>
+            <button class="btn" onclick="appendToDisplay('8')">8</button>
+            <button class="btn" onclick="appendToDisplay('9')">9</button>
+            <button class="btn operator" onclick="appendToDisplay('/')">/</button>
+            <button class="btn" onclick="appendToDisplay('4')">4</button>
+            <button class="btn" onclick="appendToDisplay('5')">5</button>
+            <button class="btn" onclick="appendToDisplay('6')">6</button>
+            <button class="btn operator" onclick="appendToDisplay('*')">*</button>
+            <button class="btn" onclick="appendToDisplay('1')">1</button>
+            <button class="btn" onclick="appendToDisplay('2')">2</button>
+            <button class="btn" onclick="appendToDisplay('3')">3</button>
+            <button class="btn operator" onclick="appendToDisplay('-')">-</button>
+            <button class="btn" onclick="appendToDisplay('0')">0</button>
+            <button class="btn" onclick="appendToDisplay('.')">.</button>
+            <button class="btn" id="plus-minus" onclick="togglePlusMinus()">+/-</button>
+            <button class="btn operator" onclick="appendToDisplay('+')">+</button>
+            <button class="btn" id="percent" onclick="calculatePercent()">%</button>
+            <button class="btn" id="sqrt" onclick="calculateSqrt()">√</button>
+            <button class="btn operator" id="equals" onclick="calculate()">=</button>
+            <button class="btn operator" onclick="appendToDisplay('**')">x^</button>
+            <button class="btn parentesis1" onclick="appendToDisplay('(')">(</button>
+            <button class="btn parentesis2" onclick="appendToDisplay(')')">)</button>
+            <button class="btn" id="lastdigit" onclick="deleteLastDigit()">←</button>
+            <button class="btn" id="clear" onclick="clearDisplay()">C</button>
+        </div>
+        <div class="navigation">
+            <a href="../"><button class="menu-button">Menú</button></a>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
