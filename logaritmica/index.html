@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de Función Logarítmica</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Racine_carr%C3%A9e_bleue.svg/220px-Racine_carr%C3%A9e_bleue.svg.png">
+</head>
+<body>
+    <div class="container">
+        <h1>Graficadora Logarítmica</h1>
+        <div>
+            <label for="k">k:</label>
+            <input type="number" id="k" value="1">
+        </div>
+        <div>
+            <label for="a">a:</label>
+            <input type="number" id="a" value="2">
+        </div>
+        <div>
+            <label for="b">b:</label>
+            <input type="number" id="b" value="1">
+        </div>
+        <div>
+            <label for="c">c:</label>
+            <input type="number" id="c" value="0">
+        </div>
+        <button onclick="graficarFuncion()">Graficar</button>
+        <button class="menu-button"><a href="../">Menú</a></button>
+        <div>
+            <canvas id="grafica" width="400px" height="400px"></canvas>
+        </div>
+    </div>
+</body>
+</html>

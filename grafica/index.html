@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calculadora Grafica - Bhaskara</title>
+  <title>Graficadora Lineal y Cuadrática</title>
   <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Racine_carr%C3%A9e_bleue.svg/220px-Racine_carr%C3%A9e_bleue.svg.png">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   
   <div class="calculator">
-    <a href="../"><button class="menu-button">Menú</button></a>
-    <h1>Calculadora Grafica</h1>
+    
+    <h1>Graficadora Lineal y Cuadrática</h1>
     <label for="a">a:</label>
     <input type="number" id="a" step="any">
     <label for="b">b:</label>
@@ -19,9 +19,9 @@
     <label for="c">c:</label>
     <input type="number" id="c" step="any">
     <button id="calculate">Calcular</button>
-    <div id="result"></div>
+    <button class="menu-button"><a href="../">Menú</a></button>
     <div class="chart-container" style="align-items: center;">
-      <canvas id="myChart"></canvas>
+      <canvas id="myChart" width="240px" height="400px"></canvas>
     </div>
   </div>
   

@@ -1,51 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Calculadora Exponencial</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link href="styles.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Racine_carr%C3%A9e_bleue.svg/220px-Racine_carr%C3%A9e_bleue.svg.png">
+    <link rel="stylesheet" href="styles.css">
+    <title>CalcuMath</title>
 </head>
-<nav class="navbar bg-body-tertiary">
-    <div class="container navbarbg">
-      <a class="navbar-brand" href="#">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Racine_carr%C3%A9e_bleue.svg/220px-Racine_carr%C3%A9e_bleue.svg.png" alt="CalcuMath" width="30" height="30">
-      </a>
-      <ul class="nav justify-content-end">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Active</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-    </div>
-</nav>
 <body>
-    <form>
-        <label for="k">k:</label>
-        <input type="number" id="k" value="1"><br>
-      
-        <label for="a">a:</label>
-        <input type="number" id="a" value="2"><br>
-      
-        <label for="b">b:</label>
-        <input type="number" id="b" value="0"><br>
-      
-        <label for="c">c:</label>
-        <input type="number" id="c" value="0"><br>
-      
-        <input type="button" value="Actualizar Gráfica" onclick="actualizarGrafica()">
-        <a href="../"><button class="menu-button">Menú</button></a>
-    </form>
-    <canvas id="grafica" width="400" height="300"></canvas>
+
+    <div class="card">
+    <a href="grafica/">
+        <div class="card-image" style="background-image: url('https://www.neurochispas.com/wp-content/uploads/2021/01/grafica-de-funcion-lineal.png');"></div>
+        <div class="card-content">
+            <h2>Grafica Lineal y Cuadrática</h2>
+            <p>Parámetros de una función cuadrática y lineal.</p>
+        </div>
+    </a>
+    </div>
+    <div class="card">
+    <a href="/exponencial/">
+        <div class="card-image" style="background-image: url('https://www.neurochispas.com/wp-content/uploads/2021/01/graficas-de-funciones-exponenciales-1.png');"></div>
+        <div class="card-content">
+            <h2>Grafica Exponencial</h2>
+            <p>Parámetros de una función exponencial.</p>
+        </div>
+    </a>
+    </div>
+    <div class="card">
+    <a href="/logaritmica/">
+        <div class="card-image" style="background-image: url('https://www.neurochispas.com/wp-content/uploads/2021/01/grafica-de-funcion-logaritmica.png');"></div>
+        <div class="card-content">
+            <h2>Grafica Logarítmica</h2>
+            <p>Parámetros de una función logarítmica.</p>
+        </div>
+    </a>
+    </div>
+    <div class="card">
+    <a href="/calculadora/">
+        <div class="card-image" style="background-image: url('https://png.pngtree.com/png-vector/20191028/ourlarge/pngtree-calculator-icon-for-your-design-websites-and-projects-png-image_1891632.jpg');"></div>
+        <div class="card-content">
+            <h2>Calculadora</h2>
+            <p>Teclas Básicas.</p>
+        </div>
+    </a>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
