@@ -1,31 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora Exponencial</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="styles.css" rel="stylesheet">
-    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Racine_carr%C3%A9e_bleue.svg/220px-Racine_carr%C3%A9e_bleue.svg.png">   
-  </head>
-<body>  
-    <form>
-        <h1>Graficadora Exponencial</h1>   
-        <label for="k">k:</label>
-        <input type="number" id="k" value="1"><br>
-      
-        <label for="a">a:</label>
-        <input type="number" id="a" value="2"><br>
-      
-        <label for="b">b:</label>
-        <input type="number" id="b" value="0"><br>
-      
-        <label for="c">c:</label>
-        <input type="number" id="c" value="0"><br>
-      
-        <input type="button" value="Graficar" onclick="actualizarGrafica()">
-        <button class="menu-button"><a href="../">Menú</a></button>
-    </form>
-    <canvas id="grafica" width="300px" height="200px"></canvas>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Racine_carr%C3%A9e_bleue.svg/220px-Racine_carr%C3%A9e_bleue.svg.png">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <header>
+                <h1>Graficadora Exponencial</h1>
+            </header>
+            <div class="input-group">
+                <label for="k">k:</label>
+                <input type="number" id="k" value="1">
+            </div>
+            <div class="input-group">
+                <label for="a">a:</label>
+                <input type="number" id="a" value="2">
+            </div>
+            <div class="input-group">
+                <label for="b">b:</label>
+                <input type="number" id="b" value="0">
+            </div>
+            <div class="input-group">
+                <label for="c">c:</label>
+                <input type="number" id="c" value="0">
+            </div>
+            <input type="button" value="Graficar" onclick="actualizarGrafica()">
+            <a href="../"><button class="menu-button">Menú</button></a>
+            <div class="chart-container">
+                <canvas id="grafica" height="300px"></canvas>
+            </div>
+        </div>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>

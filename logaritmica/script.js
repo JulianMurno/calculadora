@@ -18,7 +18,7 @@ function graficarFuncion() {
 
     // Crear un arreglo de valores x en el rango de -10 a 10
     const xValues = [];
-    for (let x = -10; x <= 10; x += 0.5) {
+    for (let x = -10; x <= 10; x += 0.25) {
         xValues.push(x);
     }
 
@@ -56,14 +56,16 @@ function graficarFuncion() {
                 x: {
                     type: 'linear',
                     position: 'bottom',
-                    min: -2, // Valor mínimo en el eje x
-                    max: 10,  // Valor máximo en el eje x
+                    min: -1, // Valor mínimo en el eje x
+                    max: 8,  // Valor máximo en el eje x
+                    stepSize: 2,
                 },
                 y: {
                     type: 'linear',
                     position: 'left',
-                    min: -2, // Valor mínimo en el eje y
-                    max: 10,  // Valor máximo en el eje y
+                    min: -1, // Valor mínimo en el eje y
+                    max: 8,  // Valor máximo en el eje y
+                    stepSize: 2,
                 }
             }
         }

@@ -30,14 +30,16 @@ function graficarFuncion(k, a, b, c) {
                 x: {
                     type: "linear",
                     position: "bottom",
-                    min: -8, // Establece el valor mínimo del eje Y
-                    max: 8,  // Establece el valor máximo del eje Y
+                    min: -2, // Establece el valor mínimo del eje X
+                    max: 8,  // Establece el valor máximo del eje X
+                    stepSize: 2 // Define el intervalo de paso en el eje x
                 },
                 y: {
                     type: "linear",
                     position: "top",
-                    min: -8, // Establece el valor mínimo del eje Y
-                    max: 8,  // Establece el valor máximo del eje Y
+                    min: -2, // Establece el valor mínimo del eje Y
+                    max: 10,  // Establece el valor máximo del eje Y
+                    stepSize: 2,
                 },
             },
         },
